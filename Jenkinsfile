@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/woken2801/dataops-proyecto-final.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t dataops-app .'
