@@ -12,7 +12,11 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run --rm -v $(pwd)/output:/app/output dataops-app'
+                sh '''
+                docker run --rm \
+                -v /var/jenkins_home/workspace/proyecto-final/output:/app/output \
+                dataops-app
+                '''
             }
         }
     }
