@@ -27,3 +27,4 @@ docker run --rm -v $(pwd)/output:/app/output dataops-app
 Se genera:
 
 output/comisiones.xlsx
+prueba
