@@ -6,7 +6,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/TU_USUARIO/proyecto-dataops.git'
+                git 'https://github.com/woken2801/dataops-proyecto-final.git'
             }
         }
 
